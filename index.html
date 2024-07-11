@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <title>Product List with Cart</title>
+</head>
+<body>
+  <div class="container">
+    <h1>Desserts.</h1>
+    <div id="product-list" class="product-list"></div>
+    <div class="cart">
+      <h2>Your Cart (<span id="cart-count">0</span>)</h2>
+      <div id="cart-items"></div>
+      <div id="cart-empty" class="cart-empty">
+        <img src="./assets/images/cake.jpg" alt="Cake">
+        <p>Your added items will appear here</p>
+      </div>
+      <div class="cart-total hidden">
+        <p>Order Total: $<span id="order-total">0.00</span></p>
+        <button id="confirm-order">Confirm Order</button>
+      </div>
+    </div>
+  </div>
+  <div id="order-confirmation" class="order-confirmation hidden">
+    <h2>Order Confirmed</h2>
+    <p>We hope you enjoy your food!</p>
+    <div id="order-summary"></div>
+    <p>Total: $<span id="order-summary-total">0.00</span></p>
+    <button id="new-order">Start New Order</button>
+  </div>
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
